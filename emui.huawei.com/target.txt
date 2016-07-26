@@ -1,0 +1,1 @@
+http://emui.huawei.com/en/plugin.php?id=hwdownload (GET)

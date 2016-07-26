@@ -1,1 +1,1 @@
-http://360.mafengwo.cn/travels/info_weibo.php?id=3539401 (GET)
+http://360.mafengwo.cn/travels/info.php?id=2929944 (GET)

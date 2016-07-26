@@ -1,0 +1,1 @@
+http://travel.pchome.com.tw/api/redirect.php?c=s_list_agoda&url=http://www.agoda.com.tw/asia/china/huaian/wanda_realm_huaian_hotel.html?cid=1524482&id=a344384&cid=11&chk=ed737eaeaaa61ab7294f57449ae1363b&amp;rct=j&q=&esrc=s (GET)

@@ -1,1 +1,1 @@
-http://top.gaoloumi.com/buildinginfo.php?id=4611 (GET)
+http://top.gaoloumi.com/citylist.php?id=126 (GET)

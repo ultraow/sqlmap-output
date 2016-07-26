@@ -1,4 +1,4 @@
-sqlmap identified the following injection point(s) with a total of 121 HTTP(s) requests:
+sqlmap identified the following injection point(s) with a total of 120 HTTP(s) requests:
 ---
 Parameter: id (GET)
     Type: AND/OR time-based blind
