@@ -1,0 +1,16 @@
+Target URL,Place,Parameter,Technique(s),Note(s)
+http://www.cfwb2b.com/company_page.php?id=3888,GET,id,T,
+http://top.gaoloumi.com/citylist.php?id=126,GET,id,BTU,
+http://www.sinoair.com/index.php?id=380&rct=j&q=&esrc=s,GET,q,T,false positive or unexploitable
+http://www.metanoia-comm.com/product_d.php?id=21&rct=j&q=&esrc=s,GET,id,B,false positive or unexploitable
+http://bbs.xhuaian.com/plugin.php?id=appbyme_app:download,GET,id,T,false positive or unexploitable
+http://top.gaoloumi.com/citylist.php?id=126,GET,id,BTU,
+http://www.globalhr.com.cn/home/home-show.php?id=342,GET,id,T,false positive or unexploitable
+http://www.whfx.org/ctwhxxlistshow.php?id=11060,GET,id,B,false positive or unexploitable
+http://www.pczp.net/zpxx/index.php?id=2898,GET,id,T,false positive or unexploitable
+http://www.zocne.com/newsdetail.php?id=446,GET,id,BE,
+http://www.metanoia-comm.com/product_d.php?id=21,GET,id,B,false positive or unexploitable
+http://bbs.huainet.com/forum.php?digest=1&fid=3&mod=forumdisplay&typeid=672,User-Agent,User-Agent,T,false positive or unexploitable
+http://www.chakd.com/d.php?id=25&areacode=0517,GET,id,B,false positive or unexploitable
+http://www.pixiv.net/member.php?id=18530319,GET,id,S,false positive or unexploitable
+http://www.pixiv.net/member.php?id=18530319,User-Agent,User-Agent,B,false positive or unexploitable

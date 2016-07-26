@@ -1,5 +1,0 @@
-Target URL,Place,Parameter,Technique(s),Note(s)
-http://www.pixiv.net/member.php?id=18530319,User-Agent,User-Agent,B,false positive or unexploitable
-http://www.pixiv.net/member.php?id=18530319,GET,id,S,false positive or unexploitable
-http://www.yingjiesheng.com:80/job_source.php,,,,
-http://www.suanjiaju.com:80/category.php,,,,
