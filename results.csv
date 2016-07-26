@@ -15,3 +15,12 @@ http://www.chakd.com/d.php?id=25&areacode=0517,GET,id,B,false positive or unexpl
 http://www.pixiv.net/member.php?id=18530319,GET,id,S,false positive or unexploitable
 http://www.pixiv.net/member.php?id=18530319,User-Agent,User-Agent,B,false positive or unexploitable
 http://www.yy5y.gmebwy.cn/frtjqo/index.php?id=17118,GET,id,B,false positive or unexploitable
+http://www.comeupwinch.com/_tw/ab/index.php?id=107,GET,id,BEU,
+http://www.konzern.com.cn/about/index.php?id=1,GET,id,BTU,
+http://www.cybiotech.com.tw/web-new/prodinfo2.php?id=2,GET,id,B,
+http://www.gisaec.com/about_us/index.php?id=72,GET,id,BU,
+http://www.tys.com.tw/category.php?id=19,GET,id,B,false positive or unexploitable
+http://www.konzern.com.cn/about/index.php?id=1&rct=j&q=&esrc=s,GET,id,BTU,
+http://www.comeupwinch.com/_tw/ab/index.php?id=107&rct=j&q=&esrc=s,GET,id,BEU,
+http://www.cybiotech.com.tw/web-new/prodinfo2.php?id=2&rct=j&q=&esrc=s,GET,id,B,
+https://www.dl-food.com/pList1.php?id=57&rct=j&q=&esrc=s,GET,id,T,false positive or unexploitable
