@@ -1,0 +1,1 @@
+http://www.seo-ha.com/news_view.php?id=%3C?php%20echo%20$com[%27id%27];%3E (GET)

