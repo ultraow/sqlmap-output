@@ -1,0 +1,9 @@
+Target URL,Place,Parameter,Technique(s),Note(s)
+http://iwashi.biz:80/jumper.php,,,,
+http://www.yhachina.com:80/ls.php,,,,
+www.kusanone-net.com/news_2ch_viewer.php?url=http://yomogi.2ch.net/test/read.cgi/news4plus/1464344728/&id=1464344728&tid=1354568711,GET,url,B,false positive or unexploitable
+https://www.hyogo-tourism.jp:443/event/index.php,,,,
+http://er12.com:80/z/bencandy.php,,,,
+http://china.alaworld.com:80/modules.php,,,,
+http://www.post.japanpost.jp:80/cgi-zip/zipcode.php,,,,
+http://lib.njmu.edu.cn:80/bencandy.php,,,,

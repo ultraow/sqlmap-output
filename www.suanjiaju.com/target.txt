@@ -1,1 +1,1 @@
-http://www.suanjiaju.com/search.php?keywords=å®¶ç¨ä¹¦æ¡ (GET)
+http://www.suanjiaju.com/category.php?id=4 (GET)

