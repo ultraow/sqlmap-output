@@ -1,0 +1,1 @@
+gl.jlu.edu.cn/manage/menu.php?id=13&&parent_id=1 (GET)

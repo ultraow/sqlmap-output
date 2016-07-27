@@ -1,0 +1,20 @@
+Target URL,Place,Parameter,Technique(s),Note(s)
+http://www.tydk.com.tw:80/about.php,,,,
+http://www.konzern.com.cn/about/index.php?id=1,GET,id,BTU,
+http://www.comeupwinch.com/_tw/ab/index.php?id=107,GET,id,BETU,
+http://www.sinoair.com:80/index.php,,,,
+http://www.cybiotech.com.tw/web-new/prodinfo2.php?id=2,GET,id,B,
+http://www.nice.com.tw:80/products-3.php,,,,
+https://www.dl-food.com:443/pList1.php,,,,
+http://www.rulingcom.com:80/RulingOrbit/pages.php,,,,
+http://www.ahadesign.com.tw:80/content.php,,,,
+http://www.tys.com.tw/category.php?id=19,GET,id,S,false positive or unexploitable
+http://www.masterexpo.com.cn:80/exp.php,,,,
+http://www.gisaec.com/about_us/index.php?id=72,GET,id,BTU,
+http://www.cell-bio.com.tw/product-page.php?id=10,GET,id,BT,
+http://rohde-schwarz.com.cn:80/index.php,,,,
+http://ww3.microtek.com.tw:80/tw/modules/tinyd5/index.php,,,,
+http://www.chengyu-cy.com/news.php?id=2,GET,id,TU,
+http://www.youngstar.com.cn/project/news_show.php?id=422,GET,id,EU,
+http://www.steinbach.com.tw/news_05.php?id=35,GET,id,BTU,
+http://www.trans-island.com.hk/zh/servicedetails.php?id=13,GET,id,T,false positive or unexploitable

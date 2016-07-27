@@ -1,0 +1,21 @@
+Target URL,Place,Parameter,Technique(s),Note(s)
+http://www.cmm.zju.edu.cn:80/chinese/column.php,,,,
+http://jt.jlu.edu.cn:80/xwnr.php,,,,
+,id,BTU,
+http://www.comeupwinch.com/_tw/ab/index.php?id=107,GET,id,BETU,
+http://www.sinoair.com/index.php?id=380,Host,Host,S,false positive or unexploitable
+http://www.cybiotech.com.tw/web-new/prodinfo2.php?id=2,GET,id,BT,
+http://www.nice.com.tw/products-3.php?id=2,Host,Host,T,false positive or unexploitable
+,,,,
+http://www.580919.com/tiger/html.php?id=185,GET,id,B,
+http://www.580919.com/tiger/html.php?id=185,GET,id,B,
+http://www.580919.com/tiger/html.php?id=184,GET,id,B,
+http://www.580919.com/tiger/html.php?id=184,GET,id,B,
+http://www.tcbet.cc:80/plugin.php,,,,
+http://www.tdm.com.mo/c_video/play_video.php?id=26210,GET,id,BTU,
+http://www.88088.com:80/cjzh/.php?152779,,,,
+http://www.4466788.com:80/to.php,,,,
+http://finance.now.com/news/post.php?id=248900,GET,id,B,
+http://www.advancement.com.tw/bj/information.php?id=9,Host,Host,T,false positive or unexploitable
+http://www.88088.com:80/cjzh/.php?105231,,,,
+http://www.qnkzj.com/modules/article/articleinfo.php?id=127,GET,id,S,false positive or unexploitable
