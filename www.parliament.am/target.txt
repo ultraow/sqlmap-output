@@ -1,0 +1,1 @@
+www.parliament.am/parliament.php?id=constitution&lang=eng (GET)

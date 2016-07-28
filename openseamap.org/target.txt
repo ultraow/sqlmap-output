@@ -1,0 +1,1 @@
+openseamap.org/index.php?id=openseamap&L=1 (GET)

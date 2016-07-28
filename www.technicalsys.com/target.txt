@@ -1,0 +1,1 @@
+http://www.technicalsys.com/index.php?id=zh-news-article&tx_news_pi1[news]=81&tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&cHash=39c4cf24c25c4645fb19ef561417dcee&amp;rct=j&q=&esrc=s (GET)

