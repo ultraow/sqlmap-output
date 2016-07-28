@@ -1,1 +1,1 @@
-data.unhcr.org/syrianrefugees/settlement.php?id=176&region=77&country=107 (GET)
+http://data.unhcr.org/mediterranean/country.php?id=105 (GET)
