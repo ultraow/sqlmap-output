@@ -1,3 +1,8 @@
 Target URL,Place,Parameter,Technique(s),Note(s)
 http://www.slavsandtatars.com/about.php?id=25,GET,id,BET,
 http://www.aradergalleries.com/catgallery.php?id=2,GET,id,BET,
+http://www.starbrightbooks.org/details.php?id=346,GET,id,BETU,
+http://emui.huawei.com:80/en/plugin.php,,,,
+http://www.leong-leong.com/news.php?id=25,GET,id,BTU,
+http://www.mesrs.gouv.qc.ca:80/index.php,,,,
+http://www.icdcprague.org/index.php?id=10,GET,id,BT,
